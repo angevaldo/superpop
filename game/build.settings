@@ -15,7 +15,6 @@ settings = {
         ["CoronaProvider.gameNetwork.google"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true } },
         ["CoronaProvider.native.popup.social"] = { publisherId = "com.coronalabs" },
         ["plugin.facebook.v4"] = { publisherId = "com.coronalabs" },
-        ["plugin.google.play.services"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true, ["android-kindle"]=true }, },
         ["plugin.applovin"] = { publisherId = "com.coronalabs", supportedPlatforms = { iphone=true, android=true, osx=true, win32=true, appletvos=true } },
     },
 
