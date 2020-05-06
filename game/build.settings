@@ -1,0 +1,112 @@
+settings = {
+
+    excludeFiles = {
+        all = { "*.sublime*", "converter" },
+        iphone = { "Icon*dpi.png", "ic_*.png", "audio/*.mp3", "audio/*.wav" },
+        android = { "iTunes*", "ios*", "Icon.png", "Icon@2x.png", "Icon-Small*.png", "Icon-6*.png", "Icon-7*.png", "Icon-8*.png", "audio/*.caf" }
+    },
+
+    plugins = {
+        ['plugin.toast'] = {publisherId = 'com.spiralcodestudio'},
+        ["plugin.google.iap.v3"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true } },
+        ["plugin.google.play.services"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true } },
+        ["plugin.notifications"] = { publisherId = "com.coronalabs" },
+        ["CoronaProvider.gameNetwork.apple"] = { publisherId = "com.coronalabs", supportedPlatforms = { iphone=true, ["iphone-sim"]=true } },
+        ["CoronaProvider.gameNetwork.google"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true } },
+        ["CoronaProvider.native.popup.social"] = { publisherId = "com.coronalabs" },
+        ["plugin.facebook.v4"] = { publisherId = "com.coronalabs" },
+        ["plugin.google.play.services"] = { publisherId = "com.coronalabs", supportedPlatforms = { android=true, ["android-kindle"]=true }, },
+        ["plugin.applovin"] = { publisherId = "com.coronalabs", supportedPlatforms = { iphone=true, android=true, osx=true, win32=true, appletvos=true } },
+    },
+
+    orientation = {
+		default = "portrait",
+		supported = {"portrait", "portraitUpsideDown"}
+	},
+
+	iphone = {
+		plist = {
+            UIAppFonts = {
+                "Chewy.ttf",
+            },
+
+            CFBundleIdentifier = "com.ajtechlabs.games.superpop",
+
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true, 
+            UIApplicationExitsOnSuspend = false,
+            UIBackgroundModes = {"remote-notification"},
+
+            CFBundleIconFiles = {
+                "Icon.png",
+                "Icon@2x.png",
+                "Icon-Small-40.png",
+                "Icon-Small-40@2x.png",
+                "Icon-60.png",
+                "Icon-60@2x.png",
+                "Icon-72.png",
+                "Icon-72@2x.png",
+                "Icon-76.png",
+                "Icon-76@2x.png",
+                "Icon-80.png",
+                "Icon-Small-40.png",
+                "Icon-Small-40@2x.png",
+                "Icon-Small-50.png",
+                "Icon-Small-50@2x.png",
+                "Icon-Small.png",
+                "Icon-Small@2x.png"
+            },
+
+            FacebookAppID = "1655546094697638",  -- FACEBOOK APP ID
+            CFBundleURLTypes = {
+                { CFBundleURLSchemes = { "fb1655546094697638", } }  -- FACEBOOK APP ID
+            },
+
+            ["URL types"] = {
+                item = {
+                    ["URL Schemes"] = { ["Item 0"] = "fb1655546094697638" },  -- FACEBOOK APP ID
+                },
+            },
+
+            NSAppTransportSecurity = {
+                NSAllowsArbitraryLoads = true,
+            },
+
+            LSApplicationQueriesSchemes = {
+                "fb",
+                "fbapi20130214",
+                "fbapi20130410",
+                "fbapi20140410",
+                "fbapi20140116",
+                "fbapi20150313",
+                "fbapi20150629",
+                "fbauth",
+                "fbauth2",
+                "fb-messenger-api20140430",
+            },
+		}
+	},
+
+    android = {
+    		facebookAppId = "1655546094697638",   -- FACEBOOK APP ID
+            googlePlayGamesAppId = "374752143338",  -- GOOGLE PLAY APP ID
+            versionCode = "32",
+            largeHeap = true,
+            usesExpansionFile = false,
+            permissions = {
+                { name = ".permission.C2D_MESSAGE", protectionLevel = "signature" },
+            },
+            usesPermissions = {
+                "android.permission.ACCESS_NETWORK_STATE",
+                "android.permission.ACCESS_WIFI_STATE",
+                "android.permission.INTERNET",
+                "android.permission.WRITE_EXTERNAL_STORAGE",
+                "android.permission.GET_ACCOUNTS",
+                "android.permission.RECEIVE_BOOT_COMPLETED",
+                "com.google.android.c2dm.permission.RECEIVE",
+                ".permission.C2D_MESSAGE",
+                "com.android.vending.BILLING",
+           },
+   },
+   
+}
