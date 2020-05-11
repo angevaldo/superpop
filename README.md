@@ -1,5 +1,5 @@
 # Super Pop
-Mobile game with 3 modes and online ranking builded with Lua and Solar2D (Corona SDK). Preview gameplay:
+Mobile game with 3 modes and online ranking built with Lua and Solar2D (Corona SDK). Preview gameplay:
 
 [![IMAGE Video sample](https://img.youtube.com/vi/l3b-iGVJZLY/0.jpg)](https://www.youtube.com/watch?v=l3b-iGVJZLY)
 
