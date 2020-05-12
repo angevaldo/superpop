@@ -1,5 +1,7 @@
 # Super Pop
-Mobile game with 3 modes and online ranking. The game was built with Solar2D (Corona SDK) / Lua. 
+Mobile game with 3 modes and online ranking. 
+
+The game was built with <a href="https://coronalabs.com/">Solar2D (Corona SDK)</a> - a cross-platform framework ideal for rapidly creating apps and games for mobile devices and desktop systems. That means you can create your project once and publish it to multiple types of devices, including Apple iPhone and iPad, Android phones and tablets, Amazon Fire, Mac Desktop, Windows Desktop, and even connected TVs such as Apple TV, Fire TV, and Android TV.
 
 Preview gameplay:
 
@@ -15,7 +17,7 @@ Preview gameplay:
 - Special gifts
 
 ## Usage
-Go to <a href="https://coronalabs.com/">SDK website</a> and install. Execute it and open the main.lua file localized in root game directory.
+<a href="https://coronalabs.com/">Download SDK</a> and install. Execute it and open the main.lua file localized in root game directory.
 ```
 game/main.lua
 ```
