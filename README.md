@@ -10,7 +10,6 @@ Preview gameplay:
 
 ## Game features
 - Cute and funny graphics in a colorful and fun environment
-- Simple and easy to learn: just go right into the action!
 - Three game modes: splash, bomb and timer
 - Many different scenarios to play
 - Overall ranking and with your friends
